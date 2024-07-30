@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+BE+VLG:wght@200&family=Raleway:ital,wght@0,300;1,300&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@200&family=Raleway:ital,wght@0,300;1,300&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body {
+    background-color: rgb(216,170,91);
+    margin: 0;
+    height: 1500px;
+}
+
+.PZ {
+    justify-content: space-between;
+    display: flex;
+    border: 3px white solid;
+    background-color: rgb(245,191,41);
+    box-shadow: 2px 2px 15px rgb(180,19,7);
+    align-items: center;
+}
+
+.PM h1 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px white;
+    margin: 0;
+    color: rgb(62,62,64);
+    background-color: rgb(241,210,173);
+    border: 2px black solid;
+    height: 80px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 25px;
+}
+
+.home h1 {
+    text-align: center;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.home a {
+    color: rgb(175,0,42);
+    text-decoration-color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px white;
+    text-align: center;
+    margin: 0;
+}
+
+.home a:hover {
+    color: rgb(98,185,98);
+}
+
+.card {
+    background-color: rgb(229,153,8);
+    width: 360px;
+    border: 2px white solid;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px greenyellow;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.card.expanded {
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.imgCB {
+    padding-left: 28px;
+    border-radius: 10px;
+}
+
+.imgGG{
+    padding-left: 28px;
+    border-radius: 20px;
+}
+
+.PBcard {
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 70px;
+}
+
+.PBcard2{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.PBSw {
+    display: flex;
+    justify-content: center;
+}
+
+.sw {
+    display: flex;
+    gap: 60px;
+}
+
+.sw h1{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px wheat;
+}
+
+.sw h1:hover{
+    color: rgb(98,185,98);
+    cursor: pointer;
+}
+
+.h2CP {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    color: greenyellow;
+    background-color: rgb(241,210,173);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px black;
+    width: 200px;
+    border: 2px white solid;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+}
+
+.h2CA{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    color: greenyellow;
+    background-color: rgb(241,210,173);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px black;
+    width: 270px;
+    border: 2px white solid;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+}
+
+.h2GG{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    color: greenyellow;
+    background-color: rgb(241,210,173);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px black;
+    width: 270px;
+    border: 2px white solid;
+    margin-left: 45px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+}
+
+.card p {
+    text-align: justify;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.h2ON {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    color: wheat;
+    background-color: rgb(98,185,98);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px black;
+    width: 150px;
+    font-size: 20px;
+    border: 2px black solid;
+    margin-top: 50px;
+    margin-left: 95px;
+    box-shadow: 2px 2px 15px rgb(175,0,42);
+    cursor: pointer;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.h2ON:hover{
+    transform: scale(1.05);
+}
+
+.h2ONGG{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    color: wheat;
+    background-color: rgb(98,185,98);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px black;
+    width: 150px;
+    font-size: 20px;
+    border: 2px black solid;
+    margin-top: 25px;
+    margin-left: 95px;
+    box-shadow: 2px 2px 15px rgb(175,0,42);
+    cursor: pointer;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.h2ONGG:hover{
+    transform: scale(1.05);
+}
+
+.h2ONlemonade{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    color: wheat;
+    background-color: rgb(98,185,98);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px black;
+    width: 150px;
+    font-size: 20px;
+    border: 2px black solid;
+    margin-top: 25px;
+    margin-left: 95px;
+    box-shadow: 2px 2px 15px rgb(175,0,42);
+    cursor: pointer;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.h2ONlemonade:hover{
+    transform: scale(1.05);
+}
+
+.imgCkn{
+    padding-left: 15px;
+    border-radius: 20px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .PBcard, .PBcard2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home{
+        padding-left: 30px;
+    }
+
+    .PZ{
+        width: 480px;
+    }
+
+    .PM h1 {
+        font-size: 40px;
+        width: 250px;
+        height: 60px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .h2CP, .h2CA, .h2GG {
+        width: 300px;
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    .h2ON, .h2ONGG, .h2ONlemonade {
+        margin: 20px auto;
+    }
+
+    .imgCB, .imgGG, .imgCkn {
+        padding-left: 50px;
+    }
+
+    .card p {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .sw {
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .PM h1 {
+        font-size: 30px;
+        width: 200px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card p {
+        width: 100%;
+    }
+}

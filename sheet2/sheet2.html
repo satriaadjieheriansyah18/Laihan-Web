@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sheet2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .more-text {
+            display: none;
+        }
+        .view-more {
+            color: blue;
+            cursor: pointer;
+        }
+        .card.expanded {
+            height: auto;
+        }
+        .PBcard, .PBcard2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="PZ">
+        <div class="BG"><img width="150px" height="150px" src="PIZZA_BC.png" alt=""></div>
+        <div class="PM"><h1>Pizza's Menu</h1></div>
+        <div class="home"><h1><a href="/home.html">Back</a></h1></div>
+    </div>
+    <div class="PBSw">
+        <div class="sw">
+            <h1 id="food-btn" style="font-family: Oswald, sans-serif;">Food</h1>
+            <h1 id="drinks-btn" style="font-family: Oswald, sans-serif;">Drinks</h1>
+        </div>
+    </div>
+    <div id="food-section" class="PBcard">
+        <div class="card">
+            <img class="imgCB" width="300px" height="250px" src="calabrese.jpg" alt="">
+            <h2 class="h2CP">Calabrese Pizza</h2>
+            <p> Description :
+                Calabrese Pizza is a pizza with a spicy touch typical of Calabria, Italy. The toppings consist of fresh tomato sauce, mozzarella cheese, spicy Calabrese salami,<span class="more-text"> fresh chili, crispy red onion, savory black olives, and a sprinkling of aromatic oregano.
+                This combination creates a balance of spicy and savory flavors that pamper the tongue. Suitable for spicy food lovers and pizza lovers with bold flavors.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ON">Order Now</h2>
+        </div>
+
+        <div class="card">
+            <img class="imgCB" width="300px" height="250px" src="mexicana.jpg" alt="">
+            <h2 class="h2CP">Mexicana Pizza</h2>
+            <p> Description :
+                Mexicana Pizza is a pizza with a distinctive Mexican flavor. The toppings consist of spicy tomato sauce, mozzarella cheese, seasoned ground beef, <span class="more-text">fresh peppers, sweet corn, black olives, and jalapenos. A sprinkling of fresh cilantro adds a distinctive aroma and flavor. Suitable for lovers of spicy food and exotic flavors.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ON">Order Now</h2>
+        </div>
+
+        <div class="card">
+            <img class="imgCkn" width="330px" height="250px" src="ckn.png" alt="">
+            <h2 class="h2CA">Chicken Alfredo Pizza</h2>
+            <p> Description :
+                Chicken Alfredo Pizza is a pizza topped with creamy alfredo sauce, grilled chicken pieces, mozzarella cheese, fresh mushrooms,<span class="more-text"> and a sprinkling of aromatic basil leaves. This combination of creamy and savory flavors is perfect for pizza lovers with an elegant touch.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ON">Order Now</h2>
+        </div>
+    </div>
+    <div id="food-section-2" class="PBcard2">
+        <div class="card">
+            <img class="imgGG" width="300px" height="280px" src="GG.png" alt="">
+            <h2 class="h2GG">Green Garden Pizza</h2>
+            <p> Description :
+                Green Garden Pizza is a pizza filled with various fresh vegetables, including bell peppers, mushrooms, broccoli, and spinach. Added with mozzarella cheese and tomato sauce,<span class="more-text">this pizza is suitable for vegetarians and health food lovers.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ONGG">Order Now</h2>
+        </div>
+
+        <div class="card">
+            <img class="imgGG" width="300px" height="280px" src="Greek-Pizza.jpg" alt="">
+            <h2 class="h2CP">Greek Pizza</h2>
+            <p> Description :
+                Greek Pizza is topped with a blend of fresh ingredients like feta cheese, black olives, red onions, tomatoes, and spinach, all seasoned with oregano<span class="more-text">and olive oil,creating a savory and tangy Mediterranean flavor.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ONGG">Order Now</h2>
+        </div>
+    </div>
+
+    <div id="drinks-section" class="PBcard" style="display: none;">
+        <!-- Drinks Cards -->
+        <div class="card">
+            <img class="imgCB" width="300px" height="300px" src="Lemonade.jpg" alt="">
+            <h2 class="h2CP">Lemonade</h2>
+            <p> Description :
+                A refreshing drink made from freshly squeezed lemon juice, water, and a touch of sugar, perfect for a hot day.<span class="more-text"></span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ONlemonade">Order Now</h2>
+        </div>
+
+        <div class="card">
+            <img class="imgCB" width="300px" height="250px" src="iced coffee.jpg" alt="">
+            <h2 class="h2CP">Iced Coffee</h2>
+            <p> Description :
+                Iced Coffee is a refreshing beverage made by brewing coffee and serving it over ice.<span class="more-text">It's often enhanced with milk, cream, and sweeteners to create a cool and invigorating drink perfect for hot days.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ON">Order Now</h2>
+        </div>
+
+        <div class="card">
+            <img class="imgCkn" width="330px" height="250px" src="smoothie.jpg" alt="">
+            <h2 class="h2CA">Smoothie</h2>
+            <p> Description :
+                A healthy smoothie made from fresh fruits and yogurt, perfect for a nutritious start to your day.<span class="more-text"></span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ON">Order Now</h2>
+        </div>
+    </div>
+
+    <div id="drinks-section-2" class="PBcard2" style="display: none;">
+        <div class="card">
+            <img class="imgGG" width="300px" height="280px" src="CAFFE LATTE.jpg" alt="">
+            <h2 class="h2GG">Green Garden Pizza</h2>
+            <p> Description :
+                A smooth and creamy coffee drink made with rich espresso and steamed milk, topped with a light<span class="more-text">layer of foam. Perfect for a comforting and mellow coffee experience.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ONGG">Order Now</h2>
+        </div>
+
+        <div class="card">
+            <img class="imgGG" width="300px" height="280px" src="vanilla.jpg" alt="">
+            <h2 class="h2CP">Greek Pizza</h2>
+            <p> Description :
+                Greek Pizza is topped with a blend of fresh ingredients like feta cheese, black olives, red onions, tomatoes, and spinach, all seasoned with oregano<span class="more-text">and olive oil,creating a savory and tangy Mediterranean flavor.</span>
+                <span class="view-more">View More</span>
+            </p>
+            <h2 class="h2ONGG">Order Now</h2>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const viewMoreTexts = document.querySelectorAll('.view-more');
+            viewMoreTexts.forEach(function (viewMoreText) {
+                viewMoreText.addEventListener('click', function () {
+                    const card = viewMoreText.closest('.card');
+                    const moreText = card.querySelector('.more-text');
+                    if (moreText.style.display === 'none' || moreText.style.display === '') {
+                        moreText.style.display = 'inline';
+                        card.classList.add('expanded');
+                        viewMoreText.textContent = 'View Less';
+                    } else {
+                        moreText.style.display = 'none';
+                        card.classList.remove('expanded');
+                        viewMoreText.textContent = 'View More';
+                    }
+                });
+
+                // Set initial state
+                const card = viewMoreText.closest('.card');
+                const moreText = card.querySelector('.more-text');
+                moreText.style.display = 'none';
+            });
+
+            // Toggle sections
+            const foodBtn = document.getElementById('food-btn');
+            const drinksBtn = document.getElementById('drinks-btn');
+            const foodSection = document.getElementById('food-section');
+            const foodSection2 = document.getElementById('food-section-2');
+            const drinksSection = document.getElementById('drinks-section');
+            const drinksSection2 = document.getElementById('drinks-section-2');
+
+            foodBtn.addEventListener('click', function () {
+                foodSection.style.display = 'flex';
+                foodSection2.style.display = 'flex';
+                drinksSection.style.display = 'none';
+                drinksSection2.style.display = 'none';
+                foodBtn.classList.add('active');
+                drinksBtn.classList.remove('active');
+            });
+
+            drinksBtn.addEventListener('click', function () {
+                drinksSection.style.display = 'flex';
+                drinksSection2.style.display = 'flex';
+                foodSection.style.display = 'none';
+                foodSection2.style.display = 'none';
+                drinksBtn.classList.add('active');
+                foodBtn.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
