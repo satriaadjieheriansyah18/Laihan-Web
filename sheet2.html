@@ -22,6 +22,16 @@
             flex-wrap: wrap;
             gap: 20px;
         }
+        .hide {
+            display: none;
+        }
+        .fade {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade.show {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +46,7 @@
             <h1 id="drinks-btn" style="font-family: Oswald, sans-serif;">Drinks</h1>
         </div>
     </div>
-    <div id="food-section" class="PBcard">
+    <div id="food-section" class="PBcard show">
         <div class="card">
             <img class="imgCB" width="300px" height="250px" src="./sheet2/calabrese.jpg" alt="">
             <h2 class="h2CP">Calabrese Pizza</h2>
@@ -68,7 +78,7 @@
             <h2 class="h2ON">Order Now</h2>
         </div>
     </div>
-    <div id="food-section-2" class="PBcard2">
+    <div id="food-section-2" class="PBcard2 show">
         <div class="card">
             <img class="imgGG" width="300px" height="280px" src="./sheet2/GG.png" alt="">
             <h2 class="h2GG">Green Garden Pizza</h2>
@@ -90,7 +100,7 @@
         </div>
     </div>
 
-    <div id="drinks-section" class="PBcard" style="display: none;">
+    <div id="drinks-section" class="PBcard fade" style="display: none;">
         <!-- Drinks Cards -->
         <div class="card">
             <img class="imgCB" width="300px" height="300px" src="./sheet2/lemonade.jpg" alt="">
@@ -123,7 +133,7 @@
         </div>
     </div>
 
-    <div id="drinks-section-2" class="PBcard2" style="display: none;">
+    <div id="drinks-section-2" class="PBcard2 fade" style="display: none;">
         <div class="card">
             <img class="imgGG" width="300px" height="280px" src="./sheet2/CAFFE LATTE.jpg" alt="">
             <h2 class="h2GG">Caffe Latte</h2>
@@ -161,14 +171,8 @@
                         viewMoreText.textContent = 'View More';
                     }
                 });
-
-                // Set initial state
-                const card = viewMoreText.closest('.card');
-                const moreText = card.querySelector('.more-text');
-                moreText.style.display = 'none';
             });
 
-            // Toggle sections
             const foodBtn = document.getElementById('food-btn');
             const drinksBtn = document.getElementById('drinks-btn');
             const foodSection = document.getElementById('food-section');
@@ -176,20 +180,32 @@
             const drinksSection = document.getElementById('drinks-section');
             const drinksSection2 = document.getElementById('drinks-section-2');
 
+            function showSection(showSection1, showSection2, hideSection1, hideSection2) {
+                hideSection1.classList.remove('show');
+                hideSection1.classList.add('fade');
+                hideSection1.style.display = 'none';
+                hideSection2.classList.remove('show');
+                hideSection2.classList.add('fade');
+                hideSection2.style.display = 'none';
+
+                setTimeout(() => {
+                    showSection1.classList.remove('fade');
+                    showSection1.classList.add('show');
+                    showSection1.style.display = 'flex';
+                    showSection2.classList.remove('fade');
+                    showSection2.classList.add('show');
+                    showSection2.style.display = 'flex';
+                }, 500); // Match this to the CSS transition duration
+            }
+
             foodBtn.addEventListener('click', function () {
-                foodSection.style.display = 'flex';
-                foodSection2.style.display = 'flex';
-                drinksSection.style.display = 'none';
-                drinksSection2.style.display = 'none';
+                showSection(foodSection, foodSection2, drinksSection, drinksSection2);
                 foodBtn.classList.add('active');
                 drinksBtn.classList.remove('active');
             });
 
             drinksBtn.addEventListener('click', function () {
-                drinksSection.style.display = 'flex';
-                drinksSection2.style.display = 'flex';
-                foodSection.style.display = 'none';
-                foodSection2.style.display = 'none';
+                showSection(drinksSection, drinksSection2, foodSection, foodSection2);
                 drinksBtn.classList.add('active');
                 foodBtn.classList.remove('active');
             });

@@ -218,7 +218,18 @@ body {
     border-radius: 20px;
 }
 
-/* Responsiveness */
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     .PBcard, .PBcard2 {
         flex-direction: column;
